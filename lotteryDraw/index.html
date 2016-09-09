@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!--下面三个是清除缓存 微信浏览器缓存严重又无刷新；这个方法调试的时候很方便-->
+    <!--<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">-->
+
+   
+    <title>抽奖赢VR</title>
+	<link rel="stylesheet" href="../static/css/api/common.css" />
+    <link rel="stylesheet" href="css/lotterydraw.css" />
+	<script type="text/javascript" src="../static/js/common/jquery-2.2.3.min.js" ></script>
+
+</head>
+<body>
+<div class="wrapper center">     
+ 	<section class="top wid">
+		<div class="imgbox">
+			<img src="images/vrtiti.png" />
+		</div>
+		<!--<img src="images/cityview.png"/>-->
+
+		<!--<img src="images/drawcont_02.png" />-->
+ 	</section>
+ 	 
+ 	<!--注意：图片需要正正方形-->
+ 	<section class="rotatecont rel wid">
+ 		<!--<img src="images/drawcont_03.png" />-->
+ 		<div class="panBOx rel">
+ 			<img src="images/pan.png" class="pan abs centre clearfix" />
+			<img src="images/flashlight.gif" class="flashlight">
+ 			<div class="imgbox abs centre pinbox">
+ 				<img src="images/pin.png" class="pin" />
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="operation t_c f18 wid">
+ 		<p class="participator bar center ">已有<span class="num">53186</span>人参与此活动</p>
+ 		<p class="bar center f18 shareToF">分享朋友圈再获得一次抽奖机会</p>
+ 	</section>
+ 	<section class="wid list">
+ 		<h3 class="tit center">
+ 			<img src="images/list.png"  />
+ 		</h3>
+ 		<div class="listcontbox center">
+ 			<!--统一简化显示名称-->
+ 			<!--10元洗车券 、5元加油充值券、10元抵扣券、车卫士智能硬件、20元抵扣券、价值799VR一台-->
+ 			
+ 			<ul class="listcont wid f13">
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:陈*达</p>
+	 				<p class="tbl-cell t_l num">电话:136**6</p>
+	 				<p class="tbl-cell t_l prize">获得价值799VR一台</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:赵*磊</p>
+	 				<p class="tbl-cell t_l num">电话:154**8</p>
+	 				<p class="tbl-cell t_l prize">获得车卫士智能硬件</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*明</p>
+	 				<p class="tbl-cell t_l num">电话:138**9</p>
+	 				<p class="tbl-cell t_l prize">获得5元加油充值券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*添</p>
+	 				<p class="tbl-cell t_l num">电话:159**8</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:郭*明</p>
+	 				<p class="tbl-cell t_l num">电话:136**5</p>
+	 				<p class="tbl-cell t_l prize">获得20元抵扣券</p> 
+	 			</li> 
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:黎*里</p>
+	 				<p class="tbl-cell t_l num">电话:159**6</p>
+	 				<p class="tbl-cell t_l prize">获得价值799VR一台</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*</p>
+	 				<p class="tbl-cell t_l num">电话:153**8</p>
+	 				<p class="tbl-cell t_l prize">获得车卫士智能硬件</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:黄*光</p>
+	 				<p class="tbl-cell t_l num">电话:139**9</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*添</p>
+	 				<p class="tbl-cell t_l num">电话:158**8</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:郭*明</p>
+	 				<p class="tbl-cell t_l num">电话:136**5</p>
+	 				<p class="tbl-cell t_l prize">获得20元抵扣券</p> 
+	 			</li>
+	 			
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:陈*里</p>
+	 				<p class="tbl-cell t_l num">电话:139**6</p>
+	 				<p class="tbl-cell t_l prize">获得5元加油充值券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:赵*磊</p>
+	 				<p class="tbl-cell t_l num">电话:151**8</p>
+	 				<p class="tbl-cell t_l prize">获得车卫士智能硬件</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*明</p>
+	 				<p class="tbl-cell t_l num">电话:136**9</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:黄*添</p>
+	 				<p class="tbl-cell t_l num">电话:159**5</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:郭*磊</p>
+	 				<p class="tbl-cell t_l num">电话:136**5</p>
+	 				<p class="tbl-cell t_l prize">获得20元抵扣券</p> 
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:曹*天</p>
+	 				<p class="tbl-cell t_l num">电话:159**9</p>
+	 				<p class="tbl-cell t_l prize">获得10元洗车券</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:刘*</p>
+	 				<p class="tbl-cell t_l num">电话:159**8</p>
+	 				<p class="tbl-cell t_l prize">获得车卫士智能硬件</p>
+	 			</li>
+	 			<li class="tbl-type center">
+	 				<p class="tbl-cell t_l name">姓名:黄*</p>
+	 				<p class="tbl-cell t_l num">电话:134**9</p>
+	 				<p class="tbl-cell t_l prize">获得20元抵扣券</p> 
+	 			</li> 
+ 		</ul> 
+ 	
+ 		</div>
+ 		 
+ 	</section>
+ 	
+ 	<section class="statement f15">
+ 		<p>1、仅限汽车钱包用户,每个账户只有一次抽奖机会</p>
+ 		<p>2、分享朋友圈可增加一次抽奖</p>
+ 		<p>3、本次活动最终解释权，归<a href="javascript:void(0)" class="carwallet">汽车钱包</a>所有</p>
+ 	</section>
+ 	
+ 	<div class="pop fixed">
+ 		<div class="whitebg popcont abs centre notmember" >
+ 			<div class="crossBtn abs">
+ 				<div class="l abs centre"></div>
+ 				<div class="r abs centre"></div>
+ 			</div>
+ 			<!--<p class="f16 tit t_c">恭喜你！中奖获得了<span class="product">10元洗车券</span></p>-->
+ 			<form>
+ 				<div class="formbox center" >
+ 					<input type="text"  class="phonenum wid f15" maxlength="11" placeholder="请输入手机号码领取" />
+ 					<p class="f12 errorinput">手机号码输入错误</p>
+ 					<div class="wid checkcodebox">
+ 						<input type="text" class="fl checkcode f15" placeholder="请输入验证码"/>
+ 						<input type="button" class="fr checkcodebtn f15" value="获取验证码" disabled="disabled"/> 
+ 					</div>
+ 					<input type="submit" value="确认领取" class="wid comfirm f16" disabled="disabled"/> 
+ 				</div>
+ 			</form>
+ 		</div>
+
+		<div class="whitebg popcont-member abs centre ">
+			<div class="crossBtn abs">
+				<div class="l abs centre"></div>
+				<div class="r abs centre"></div>
+			</div>
+			<form>
+				<div class="formbox center">
+					<!--<p class="f16 tit t_c">恭喜您！获得了<span class="product">10元洗车券</span></p>-->
+					<input type="submit" value="确认领取" class="wid comfirm f16"/>
+				</div>
+			</form>
+		</div>
+ 	</div>
+
+
+
+	<div class="sharePop fixed">
+ 		<div>
+ 			<img src="images/shareTowechat_02.png" /> 
+ 		</div>
+ 		<p class="tips f18 t_c">您已抽过奖啦~<br/>分享至朋友圈可获多一次抽奖机会</p>
+
+ 		<div class="imgbox center knowit">
+ 			<img src="images/shareTowechat_05.png" />
+ 		</div>
+ 	</div>
+</div>
+<script type="text/javascript" src="js/lotteryDraw.js" ></script>
+</body>
+</html>
